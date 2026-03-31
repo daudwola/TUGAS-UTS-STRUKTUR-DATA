@@ -23,5 +23,20 @@ Rumusan Masalah
 
 # Solusi yang Ditawarkan
 
-1.Penggunaan Queue (FIFO)
+**1**.Penggunaan Queue (FIFO)
 Sistem menggunakan konsep First In First Out (FIFO), di mana kendaraan yang datang terlebih dahulu akan keluar terlebih dahulu. Hal ini menciptakan sistem yang adil dan teratur.
+
+**2**.Implementasi Menggunakan Array
+Array digunakan sebagai struktur penyimpanan data kendaraan karena mudah diimplementasikan dan efisien untuk sistem sederhana dengan kapasitas tetap.
+
+**3**.Pengelolaan Operasi Queue
+    Sistem menyediakan operasi:
+
+   Enqueue → menambahkan kendaraan ke antrian
+  
+   Dequeue → mengeluarkan kendaraan dari antrian
+  
+   Peek → melihat kendaraan paling depan
+
+**4**.Efisiensi dan Keteraturan Sistem
+Sistem ini membantu mengurangi kemacetan, mengatur kendaraan dengan rapi, serta memudahkan pengelolaan parkir secara otomatis.
