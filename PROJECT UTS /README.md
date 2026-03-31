@@ -10,3 +10,10 @@ NAMA :
 
 # STUDI KASUS SISTEM PARKIR (QUEUE BERBASIS ARRAY)
 **1. Rumusan Masalah dan Solusi**
+
+Rumusan Masalah
+1.  Bagaimana konsep struktur data queue dapat digunakan untuk mengelola antrian kendaraan pada sistem parkir secara efisien dan terstruktur?
+    Permasalahan ini muncul karena dalam kehidupan sehari-hari, kendaraan yang masuk ke area parkir harus dilayani berdasarkan urutan kedatangan agar tidak terjadi kekacauan atau ketidakadilan dalam pelayanan.
+
+2.  Bagaimana penggunaan struktur data lain seperti linked list dapat meningkatkan fleksibilitas dibandingkan array dalam implementasi sistem antrian parkir?
+    Hal ini menjadi penting karena jumlah kendaraan yang datang tidak selalu tetap, sehingga diperlukan struktur data yang mampu menyesuaikan kapasitas secara dinamis.
