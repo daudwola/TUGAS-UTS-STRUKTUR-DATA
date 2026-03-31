@@ -9,7 +9,7 @@ NAMA : DAUD GALLU WOLA (2501010343)
 NAMA : 
 
 # STUDI KASUS SISTEM PARKIR (QUEUE BERBASIS ARRAY)
-**1. Rumusan Masalah dan Solusi**
+# 1. Rumusan Masalah dan Solusi
 
 Rumusan Masalah
 1.  Bagaimana konsep struktur data queue dapat digunakan untuk mengelola antrian kendaraan pada sistem parkir secara efisien dan terstruktur?
@@ -40,3 +40,35 @@ Array digunakan sebagai struktur penyimpanan data kendaraan karena mudah diimple
 
 **4**.Efisiensi dan Keteraturan Sistem
 Sistem ini membantu mengurangi kemacetan, mengatur kendaraan dengan rapi, serta memudahkan pengelolaan parkir secara otomatis.
+
+# 2. Landasan Teori
+
+**Pengertian Struktur Data**
+
+Struktur data adalah cara untuk menyimpan, mengatur, dan mengelola data dalam komputer sehingga dapat digunakan secara efisien. Struktur data sangat penting dalam pengembangan sistem karena menentukan bagaimana data diproses dan diakses.
+
+**Konsep Queue dan Stack**
+
+Queue adalah struktur data yang bekerja berdasarkan prinsip antrian (FIFO), sedangkan stack menggunakan prinsip tumpukan (LIFO). Dalam queue, elemen pertama yang masuk akan menjadi elemen pertama yang keluar. Sedangkan dalam stack, elemen terakhir yang masuk akan menjadi yang pertama keluar.
+
+**Konsep FIFO dan LIFO**
+
+FIFO (First In First Out) digunakan dalam queue, seperti antrian parkir.
+LIFO (Last In First Out) digunakan dalam stack, seperti tumpukan buku.
+Dalam sistem parkir, FIFO lebih relevan karena kendaraan harus keluar sesuai urutan masuk
+
+**Implementasi Array dan Linked List**
+
+* Array: memiliki ukuran tetap, mudah digunakan, dan efisien untuk data kecil.
+
+* Linked List: lebih fleksibel karena dapat bertambah atau berkurang secara dinamis, tetapi lebih kompleks.
+
+Dalam tugas ini digunakan array karena sesuai untuk sistem sederhana dengan kapasitas terbatas.
+
+**Sumber Ilmiah**
+
+1.Weiss, Mark Allen. Data Structures and Algorithm Analysis in C++.
+
+2.Cormen, Thomas H. Introduction to Algorithms.
+
+3.Artikel Jurnal: “Implementation of Queue Data Structure in Real Life Applications”
