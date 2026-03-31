@@ -17,3 +17,11 @@ Rumusan Masalah
 
 2.  Bagaimana penggunaan struktur data lain seperti linked list dapat meningkatkan fleksibilitas dibandingkan array dalam implementasi sistem antrian parkir?
     Hal ini menjadi penting karena jumlah kendaraan yang datang tidak selalu tetap, sehingga diperlukan struktur data yang mampu menyesuaikan kapasitas secara dinamis.
+
+3.  Bagaimana sistem parkir berbasis queue yang dirancang mampu menyelesaikan permasalahan nyata seperti keterbatasan lahan parkir, penumpukan kendaraan, dan pengelolaan keluar-masuk kendaraan secara tertib?
+    Permasalahan ini sering terjadi di pusat perbelanjaan, kampus, maupun perkantoran yang memiliki kapasitas parkir terbatas.
+
+# Solusi yang Ditawarkan
+
+1.Penggunaan Queue (FIFO)
+Sistem menggunakan konsep First In First Out (FIFO), di mana kendaraan yang datang terlebih dahulu akan keluar terlebih dahulu. Hal ini menciptakan sistem yang adil dan teratur.
