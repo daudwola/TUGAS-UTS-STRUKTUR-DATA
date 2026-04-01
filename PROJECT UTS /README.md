@@ -72,3 +72,20 @@ Dalam tugas ini digunakan array karena sesuai untuk sistem sederhana dengan kapa
 2.Cormen, Thomas H. Introduction to Algorithms.
 
 3.Artikel Jurnal: “Implementation of Queue Data Structure in Real Life Applications”
+
+# 3. Sistem dan Implementasi
+
+  # Desain sistem menggunakan Flowchart
+
+<img width="397" height="425" alt="Cuplikan layar 2026-04-01 185202" src="https://github.com/user-attachments/assets/dfb0b823-710a-4ae7-a5a4-2b38e9127923" />
+
+  
+  **Penjelasan Flowchart Sistem Parkir (Queue Berbasis Array)**
+
+  Flowchart tersebut menggambarkan alur kerja sistem parkir yang menggunakan konsep Queue (antrian) dengan beberapa pilihan menu utama. Setiap langkah memiliki fungsi tertentu dalam mengelola kendaraan yang masuk dan keluar dari area parkir.
+
+ **1. Mulai**
+
+ Proses dimulai dari simbol “Mulai”, yang menandakan bahwa sistem parkir mulai dijalankan.
+
+**2. Input Pilihan Menu**
