@@ -89,3 +89,39 @@ Dalam tugas ini digunakan array karena sesuai untuk sistem sederhana dengan kapa
  Proses dimulai dari simbol “Mulai”, yang menandakan bahwa sistem parkir mulai dijalankan.
 
 **2. Input Pilihan Menu**
+
+Pengguna (operator parkir) diminta untuk memasukkan pilihan menu yang tersedia. Pilihan ini menentukan operasi apa yang akan dilakukan dalam sistem.
+
+# 3. Proses Keputusan (Pilih?)
+
+Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 4 kemungkinan:
+
+**A. Enqueue (Tambah Kendaraan)**
+
+Jika memilih 1, maka sistem akan:
+
+*Menambahkan kendaraan (nomor polisi) ke dalam antrian parkir
+
+*Kendaraan ditempatkan di posisi paling belakang (rear)
+
+**B. Dequeue (Hapus Kendaraan Depan)**
+
+Jika memilih 2, maka sistem akan:
+
+*Menghapus kendaraan yang berada di posisi paling depan (front)
+
+*Kendaraan tersebut dianggap keluar dari area parkir
+
+**C. Peek (Melihat Kendaraan Depan)**
+
+Jika memilih 3, maka sistem akan:
+
+*Menampilkan kendaraan yang berada di posisi paling depan
+
+*Data tidak dihapus, hanya ditampilkan saja
+
+**D. Tampil Semua**
+
+Jika memilih 4, maka sistem akan:
+
+Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
