@@ -92,7 +92,7 @@ Dalam tugas ini digunakan array karena sesuai untuk sistem sederhana dengan kapa
 
 Pengguna (operator parkir) diminta untuk memasukkan pilihan menu yang tersedia. Pilihan ini menentukan operasi apa yang akan dilakukan dalam sistem.
 
-# 3. Proses Keputusan (Pilih?)
+**3. Proses Keputusan (Pilih?)**
 
 Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 4 kemungkinan:
 
@@ -400,6 +400,8 @@ Pilih (1-5): 5
 LAPORAN SISTEM PARKIR
 
 Kendaraan masuk: 10
+
+
 
 Kendaraan keluar: 6
 
