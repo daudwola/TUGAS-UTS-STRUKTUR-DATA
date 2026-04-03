@@ -6,7 +6,7 @@
 
 NAMA : DAUD GALLU WOLA (2501010343)
 
-NAMA : 
+NAMA : Claudya Folenta Bunga Ba (2501010358)
 
 # STUDI KASUS SISTEM PARKIR (QUEUE BERBASIS ARRAY)
 # 1. Rumusan Masalah dan Solusi
@@ -125,3 +125,284 @@ Jika memilih 3, maka sistem akan:
 Jika memilih 4, maka sistem akan:
 
 Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+const int MAX = 100; 
+
+class SistemParkir {
+private:
+    string nomor[MAX];
+    int front, rear;
+    int totalMasuk, totalKeluar, sisa;
+
+public:
+    SistemParkir() {
+        front = 0;
+        rear = -1;
+        totalMasuk = 0;
+        totalKeluar = 0;
+        sisa = 0;
+    }
+
+    bool isFull() {
+        return sisa == MAX;
+    }
+
+    bool isEmpty() {
+        return sisa == 0;
+    }
+
+    void enqueue() {
+        if (isFull()) {
+            cout << "\nParkir penuh (100/100)" << endl;
+            return;
+        }
+
+        int jumlah;
+        cout << "Jumlah kendaraan masuk: ";
+        cin >> jumlah;
+
+        if (jumlah > (MAX - sisa)) {
+            cout << "Melebihi kapasitas! Maksimal " << (MAX - sisa) << endl;
+            return;
+        }
+
+        for (int i = 0; i < jumlah; i++) {
+            cout << "Nomor polisi ke-" << (i+1) << ": ";
+            cin >> nomor[++rear];
+            sisa++;
+            totalMasuk++;
+        }
+        cout << "Berhasil masuk " << jumlah << " kendaraan" << endl;
+    }
+
+    void dequeue() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+
+        int jumlah;
+        cout << "Jumlah kendaraan keluar: ";
+        cin >> jumlah;
+
+        if (jumlah > sisa) {
+            cout << "Hanya ada " << sisa << " kendaraan" << endl;
+            jumlah = sisa;
+        }
+
+        cout << "\nKendaraan keluar:" << endl;
+        for (int i = 0; i < jumlah; i++) {
+            cout << (i+1) << ". " << nomor[front] << endl;
+            front++;
+            sisa--;
+            totalKeluar++;
+        }
+        cout << "Keluar " << jumlah << " kendaraan" << endl;
+    }
+    
+    void peek() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+        cout << "\nKendaraan di depan: " << nomor[front] << endl;
+        cout << "Total di parkir: " << sisa << endl;
+    }
+
+    void tampil() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+
+        cout << "\nDaftar kendaraan di parkir (" << sisa << "/100):" << endl;
+        for (int i = front, no = 1; i <= rear; i++, no++) {
+            cout << no << ". " << nomor[i] << endl;
+        }
+        cout << "\nTotal keluar: " << totalKeluar << endl;
+    }
+
+    void laporanAkhir() {
+        cout << "LAPORAN SISTEM PARKIR" << endl;
+        cout << "Kendaraan masuk: " << totalMasuk << endl;
+        cout << "Kendaraan keluar: " << totalKeluar << endl;
+        cout << "Masih di parkir: " << sisa << endl;
+        
+        cout << "SELESAI" << endl;
+    }
+};
+
+int main() {
+    SistemParkir parkir;
+    int pilihan;
+
+    cout << "SISTEM PARKIR - Kapasitas 100" << endl;
+
+    while (true) {
+        cout << "\n1. Masukkan kendaraan" << endl;
+        cout << "2. Keluarkan kendaraan" << endl;
+        cout << "3. Cek depan" << endl;
+        cout << "4. Tampilkan parkir" << endl;
+        cout << "5. Laporan akhir & selesai" << endl;
+        cout << "Pilih (1-5): ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                parkir.enqueue();
+                break;
+            case 2:
+                parkir.dequeue();
+                break;
+            case 3:
+                parkir.peek();
+                break;
+            case 4:
+                parkir.tampil();
+                break;
+            case 5:
+                parkir.laporanAkhir();
+                return 0;
+            default:
+                cout << "Pilihan salah" << endl;
+        }
+    }
+}
+
+# HASIL NYA
+# SISTEM PARKIR - Kapasitas 100
+
+# Langkah 1
+
+1. Masukkan kendaraan
+2. Keluarkan kendaraan
+3. Cek depan
+4. Tampilkan parkir
+5. Laporan akhir & selesai
+Pilih (1-5): 1
+Jumlah kendaraan masuk: 10
+Nomor polisi ke-1: 1
+
+Nomor polisi ke-2: 2
+
+Nomor polisi ke-3: 3
+
+Nomor polisi ke-4: 4
+
+Nomor polisi ke-5: 5
+
+Nomor polisi ke-6: 6
+
+Nomor polisi ke-7: 7
+
+Nomor polisi ke-8: 8
+
+Nomor polisi ke-9: 9
+
+Nomor polisi ke-10: 10
+
+Berhasil masuk 10 kendaraan
+
+# Langkah 2
+
+1. Masukkan kendaraan
+
+2. Keluarkan kendaraan
+
+3. Cek depan
+
+4. Tampilkan parkir
+
+5. Laporan akhir & selesai
+
+Pilih (1-5): 2
+
+Jumlah kendaraan keluar: 6
+
+Kendaraan keluar:
+
+1. 1
+
+2. 2
+
+3. 3
+
+4. 4
+
+5. 5
+
+6. 6
+
+Keluar 6 kendaraan
+
+# Langkah 3
+
+1. Masukkan kendaraan
+
+2. Keluarkan kendaraan
+
+3. Cek depan
+
+4. Tampilkan parkir
+
+5. Laporan akhir & selesai
+
+Pilih (1-5): 3
+
+Kendaraan di depan: 7
+
+Total di parkir: 4
+
+# Langkah 4
+
+1. Masukkan kendaraan
+
+2. Keluarkan kendaraan
+
+3. Cek depan
+
+4. Tampilkan parkir
+
+5. Laporan akhir & selesai
+
+Pilih (1-5): 4
+
+Daftar kendaraan di parkir (4/100):
+
+1. 7
+
+2. 8
+
+3. 9
+
+4. 10
+
+Total keluar: 6
+
+# Langkah 5
+
+1. Masukkan kendaraan
+
+2. Keluarkan kendaraan
+
+3. Cek depan
+
+4. Tampilkan parkir
+
+5. Laporan akhir & selesai
+
+Pilih (1-5): 5
+
+LAPORAN SISTEM PARKIR
+
+Kendaraan masuk: 10
+
+Kendaraan keluar: 6
+
+Masih di parkir: 4
+
+SELESAI
