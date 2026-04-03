@@ -126,19 +126,28 @@ Jika memilih 4, maka sistem akan:
 
 Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
 
+# ---------------------------------- #
+
 #include <iostream>
+
 #include <string>
+
 using namespace std;
 
 const int MAX = 100; 
 
 class SistemParkir {
+
 private:
+
     string nomor[MAX];
+    
     int front, rear;
+    
     int totalMasuk, totalKeluar, sisa;
 
 public:
+    
     SistemParkir() {
         front = 0;
         rear = -1;
