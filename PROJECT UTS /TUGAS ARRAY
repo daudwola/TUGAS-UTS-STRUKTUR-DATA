@@ -1,1 +1,146 @@
+#include <iostream>
+#include <string>
+using namespace std;
 
+const int MAX = 100;  // Kapasitas maksimal 100
+
+class SistemParkir {
+private:
+    string nomor[MAX];
+    int front, rear;
+    int totalMasuk, totalKeluar, sisa;
+
+public:
+    SistemParkir() {
+        front = 0;
+        rear = -1;
+        totalMasuk = 0;
+        totalKeluar = 0;
+        sisa = 0;
+    }
+
+    bool isFull() {
+        return sisa == MAX;
+    }
+
+    bool isEmpty() {
+        return sisa == 0;
+    }
+
+    void enqueue() {
+        if (isFull()) {
+            cout << "\nParkir penuh (100/100)" << endl;
+            return;
+        }
+
+        int jumlah;
+        cout << "Jumlah kendaraan masuk: ";
+        cin >> jumlah;
+
+        if (jumlah > (MAX - sisa)) {
+            cout << "Melebihi kapasitas! Maksimal " << (MAX - sisa) << endl;
+            return;
+        }
+
+        for (int i = 0; i < jumlah; i++) {
+            cout << "Nomor polisi ke-" << (i+1) << ": ";
+            cin >> nomor[++rear];
+            sisa++;
+            totalMasuk++;
+        }
+        cout << "Berhasil masuk " << jumlah << " kendaraan" << endl;
+    }
+
+    void dequeue() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+
+        int jumlah;
+        cout << "Jumlah kendaraan keluar: ";
+        cin >> jumlah;
+
+        if (jumlah > sisa) {
+            cout << "Hanya ada " << sisa << " kendaraan" << endl;
+            jumlah = sisa;
+        }
+
+        cout << "\nKendaraan keluar:" << endl;
+        for (int i = 0; i < jumlah; i++) {
+            cout << (i+1) << ". " << nomor[front] << endl;
+            front++;
+            sisa--;
+            totalKeluar++;
+        }
+        cout << "Keluar " << jumlah << " kendaraan" << endl;
+    }
+    
+    void peek() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+        cout << "\nKendaraan di depan: " << nomor[front] << endl;
+        cout << "Total di parkir: " << sisa << endl;
+    }
+
+    void tampil() {
+        if (isEmpty()) {
+            cout << "\nParkir kosong" << endl;
+            return;
+        }
+
+        cout << "\nDaftar kendaraan di parkir (" << sisa << "/100):" << endl;
+        for (int i = front, no = 1; i <= rear; i++, no++) {
+            cout << no << ". " << nomor[i] << endl;
+        }
+        cout << "\nTotal keluar: " << totalKeluar << endl;
+    }
+
+    void laporanAkhir() {
+        cout << "LAPORAN SISTEM PARKIR" << endl;
+        cout << "Kendaraan masuk: " << totalMasuk << endl;
+        cout << "Kendaraan keluar: " << totalKeluar << endl;
+        cout << "Masih di parkir: " << sisa << endl;
+        
+        cout << "SELESAI" << endl;
+    }
+};
+
+int main() {
+    SistemParkir parkir;
+    int pilihan;
+
+    cout << "SISTEM PARKIR - Kapasitas 100" << endl;
+
+    while (true) {
+        cout << "\n1. Masukkan kendaraan" << endl;
+        cout << "2. Keluarkan kendaraan" << endl;
+        cout << "3. Cek depan" << endl;
+        cout << "4. Tampilkan parkir" << endl;
+        cout << "5. Laporan akhir & selesai" << endl;
+        cout << "Pilih (1-5): ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                parkir.enqueue();
+                break;
+            case 2:
+                parkir.dequeue();
+                break;
+            case 3:
+                parkir.peek();
+                break;
+            case 4:
+                parkir.tampil();
+                break;
+            case 5:
+                parkir.laporanAkhir();
+                return 0;
+            default:
+                cout << "Pilihan salah" << endl;
+        }
+    }
+}
