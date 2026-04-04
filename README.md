@@ -128,26 +128,31 @@ Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
 
 # ---------------------------------- #
 
-#include <iostream>
+<img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_00_37" src="https://github.com/user-attachments/assets/8270baf4-1ad7-4c4d-8d66-f1d01811d0ac" />
 
-#include <string>
+<img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_01_11 (1)" src="https://github.com/user-attachments/assets/a4dd9879-0d86-45e2-b7bb-b5f36afec366" />
 
-using namespace std;
+<img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_01_53" src="https://github.com/user-attachments/assets/84f18261-1b55-4ac1-8536-d17d926c2100" />
 
-const int MAX = 100; 
+<img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_02_13" src="https://github.com/user-attachments/assets/1cf52dd8-dcdb-4ad8-bbc2-2df92d20e568" />
+
+<img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_02_45" src="https://github.com/user-attachments/assets/8fb5d6dc-5688-4e71-a0a2-fe66103cddce" />
+
+**#include <iostream>**
+
+**#include <string>**
+
+**using namespace std;**
+
+**const int MAX = 100;  // Kapasitas maksimal 100
 
 class SistemParkir {
-
 private:
-
     string nomor[MAX];
-    
     int front, rear;
-    
     int totalMasuk, totalKeluar, sisa;
 
 public:
-    
     SistemParkir() {
         front = 0;
         rear = -1;
@@ -281,6 +286,9 @@ int main() {
         }
     }
 }
+
+# _________________________________________________________________________ #
+
 
 # HASIL NYA
 # SISTEM PARKIR - Kapasitas 100
@@ -417,4 +425,3 @@ Kendaraan keluar: 6
 Masih di parkir: 4
 
 SELESAI
-
