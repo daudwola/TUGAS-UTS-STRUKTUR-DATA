@@ -425,3 +425,33 @@ Kendaraan keluar: 6
 Masih di parkir: 4
 
 SELESAI
+
+# ______________________________________ #
+
+
+# KESIMPULAN
+
+Berdasarkan hasil perancangan dan implementasi sistem parkir berbasis Queue (antrian) menggunakan array, dapat disimpulkan bahwa:
+
+**1.Konsep Queue (FIFO) terbukti sangat efektif dalam mengelola antrian kendaraan pada sistem parkir. Kendaraan yang masuk terlebih dahulu akan keluar lebih dahulu, sehingga menciptakan sistem yang adil, teratur, dan mudah dipahami.**
+
+**2.Implementasi menggunakan array mampu memberikan solusi yang sederhana, terstruktur, dan efisien untuk sistem parkir dengan kapasitas terbatas. Operasi dasar seperti enqueue, dequeue, dan peek dapat dijalankan dengan baik sesuai dengan prinsip queue.**
+
+**3.Sistem yang dirancang berhasil mengatasi permasalahan nyata, seperti pengelolaan kendaraan masuk dan keluar, keteraturan antrian, serta pemantauan jumlah kendaraan di area parkir secara real-time.**
+
+**4.Dari hasil pengujian program, sistem mampu menampilkan informasi secara akurat, seperti jumlah kendaraan masuk, keluar, dan sisa kendaraan, sehingga memudahkan dalam proses monitoring dan pengambilan keputusan.**
+
+**5.Meskipun array memiliki keterbatasan dalam kapasitas yang bersifat tetap, sistem ini tetap efektif untuk skala kecil hingga menengah. Untuk pengembangan lebih lanjut, penggunaan linked list dapat dipertimbangkan agar sistem menjadi lebih fleksibel dan dinamis.**
+
+  ** Secara keseluruhan**, sistem parkir berbasis queue ini menunjukkan bahwa penerapan struktur data dalam kehidupan nyata sangat membantu dalam meningkatkan efisiensi, keteraturan, dan kemudahan pengelolaan suatu sistem.
+
+
+
+# SARAN
+
+Sistem ini masih dapat dikembangkan lebih lanjut agar lebih optimal. Misalnya dengan menggunakan struktur data yang lebih fleksibel seperti linked list, menambahkan fitur pencarian kendaraan, serta membuat tampilan yang lebih interaktif. Selain itu, sistem juga bisa dikembangkan menjadi berbasis aplikasi agar lebih mudah digunakan dalam kondisi nyata.
+
+
+# PENUTUP
+
+Demikian tugas ini disusun sebagai bentuk pemahaman terhadap penerapan struktur data queue dalam kehidupan sehari-hari. Diharapkan sistem yang dibuat dapat memberikan gambaran sederhana mengenai pengelolaan antrian parkir. Penulis menyadari bahwa masih terdapat kekurangan, sehingga kritik dan saran sangat diharapkan untuk perbaikan ke depannya.
