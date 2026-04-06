@@ -443,7 +443,7 @@ Berdasarkan hasil perancangan dan implementasi sistem parkir berbasis Queue (ant
 
 **5.Meskipun array memiliki keterbatasan dalam kapasitas yang bersifat tetap, sistem ini tetap efektif untuk skala kecil hingga menengah. Untuk pengembangan lebih lanjut, penggunaan linked list dapat dipertimbangkan agar sistem menjadi lebih fleksibel dan dinamis.**
 
-  ** Secara keseluruhan**, sistem parkir berbasis queue ini menunjukkan bahwa penerapan struktur data dalam kehidupan nyata sangat membantu dalam meningkatkan efisiensi, keteraturan, dan kemudahan pengelolaan suatu sistem.
+  **Secara keseluruhan**, sistem parkir berbasis queue ini menunjukkan bahwa penerapan struktur data dalam kehidupan nyata sangat membantu dalam meningkatkan efisiensi, keteraturan, dan kemudahan pengelolaan suatu sistem.
 
 
 
