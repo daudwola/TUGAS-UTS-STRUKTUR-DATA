@@ -463,3 +463,9 @@ Sistem ini masih dapat dikembangkan lebih lanjut agar lebih optimal. Misalnya de
 # PENUTUP
 
 Demikian tugas ini disusun sebagai bentuk pemahaman terhadap penerapan struktur data queue dalam kehidupan sehari-hari. Diharapkan sistem yang dibuat dapat memberikan gambaran sederhana mengenai pengelolaan antrian parkir. Penulis menyadari bahwa masih terdapat kekurangan, sehingga kritik dan saran sangat diharapkan untuk perbaikan ke depannya.
+
+# SLIDE PERESENTASI #
+
+https://canva.link/4yzt5xylir8ztus
+
+
