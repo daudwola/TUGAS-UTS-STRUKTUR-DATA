@@ -96,7 +96,7 @@ Pengguna (operator parkir) diminta untuk memasukkan pilihan menu yang tersedia. 
 
 **3. Proses Keputusan (Pilih?)**
 
-Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 4 kemungkinan:
+Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 5 kemungkinan:
 
 **A. Enqueue (Tambah Kendaraan)**
 
@@ -104,13 +104,13 @@ Jika memilih 1, maka sistem akan:
 
 *Menambahkan kendaraan (nomor polisi) ke dalam antrian parkir
 
-*Kendaraan ditempatkan di posisi paling belakang (rear)
+*Kendaraan ditempatkan di posisi paling belakang  
 
 **B. Dequeue (Hapus Kendaraan Depan)**
 
 Jika memilih 2, maka sistem akan:
 
-*Menghapus kendaraan yang berada di posisi paling depan (front)
+*Menghapus kendaraan yang berada di posisi paling depan 
 
 *Kendaraan tersebut dianggap keluar dari area parkir
 
@@ -120,7 +120,7 @@ Jika memilih 3, maka sistem akan:
 
 *Menampilkan kendaraan yang berada di posisi paling depan
 
-*Data tidak dihapus, hanya ditampilkan saja
+*Data tidak dihapus, hanya ditampilkan kembali
 
 **D. Tampil Semua**
 
