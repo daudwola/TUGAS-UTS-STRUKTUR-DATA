@@ -128,6 +128,9 @@ Jika memilih 4, maka sistem akan:
 
 Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
 
+**E Menampilkan laporan kendaraan masuk ,kendaraan keluar ,dan yang masi di parkirab 
+ selesai 
+
 # ---------------------------------- #
 
 <img width="1366" height="599" alt="screencapture-programiz-cpp-programming-online-compiler-2026-04-04-13_00_37" src="https://github.com/user-attachments/assets/8270baf4-1ad7-4c4d-8d66-f1d01811d0ac" />
