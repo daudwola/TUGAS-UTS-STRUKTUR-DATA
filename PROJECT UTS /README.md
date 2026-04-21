@@ -8,6 +8,8 @@ NAMA : DAUD GALLU WOLA (2501010343)
 
 NAMA : CLAUDYA FOLENTA BUNGA BA (2501010358)
 
+NAMA : ACHMAD SANDY FARYOKO (2501010066)
+
 # STUDI KASUS SISTEM PARKIR (QUEUE BERBASIS ARRAY)
 # 1. Rumusan Masalah dan Solusi
 
@@ -94,7 +96,7 @@ Pengguna (operator parkir) diminta untuk memasukkan pilihan menu yang tersedia. 
 
 **3. Proses Keputusan (Pilih?)**
 
-Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 4 kemungkinan:
+Pada bagian ini terdapat simbol decision (percabangan) yang berfungsi untuk mengecek pilihan yang dimasukkan oleh pengguna. Terdapat 5 kemungkinan:
 
 **A. Enqueue (Tambah Kendaraan)**
 
@@ -102,13 +104,13 @@ Jika memilih 1, maka sistem akan:
 
 *Menambahkan kendaraan (nomor polisi) ke dalam antrian parkir
 
-*Kendaraan ditempatkan di posisi paling belakang (rear)
+*Kendaraan ditempatkan di posisi paling belakang  
 
 **B. Dequeue (Hapus Kendaraan Depan)**
 
 Jika memilih 2, maka sistem akan:
 
-*Menghapus kendaraan yang berada di posisi paling depan (front)
+*Menghapus kendaraan yang berada di posisi paling depan 
 
 *Kendaraan tersebut dianggap keluar dari area parkir
 
@@ -118,13 +120,19 @@ Jika memilih 3, maka sistem akan:
 
 *Menampilkan kendaraan yang berada di posisi paling depan
 
-*Data tidak dihapus, hanya ditampilkan saja
+*Data tidak dihapus, hanya ditampilkan kembali
 
 **D. Tampil Semua**
 
 Jika memilih 4, maka sistem akan:
 
 Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
+
+**E Menampilkan laporan**
+
+kendaraan masuk ,kendaraan keluar ,dan yang masi di parkirab 
+
+ selesai 
 
 # ---------------------------------- #
 
@@ -443,7 +451,7 @@ Berdasarkan hasil perancangan dan implementasi sistem parkir berbasis Queue (ant
 
 **5.Meskipun array memiliki keterbatasan dalam kapasitas yang bersifat tetap, sistem ini tetap efektif untuk skala kecil hingga menengah. Untuk pengembangan lebih lanjut, penggunaan linked list dapat dipertimbangkan agar sistem menjadi lebih fleksibel dan dinamis.**
 
-  ** Secara keseluruhan**, sistem parkir berbasis queue ini menunjukkan bahwa penerapan struktur data dalam kehidupan nyata sangat membantu dalam meningkatkan efisiensi, keteraturan, dan kemudahan pengelolaan suatu sistem.
+  **Secara keseluruhan**, sistem parkir berbasis queue ini menunjukkan bahwa penerapan struktur data dalam kehidupan nyata sangat membantu dalam meningkatkan efisiensi, keteraturan, dan kemudahan pengelolaan suatu sistem.
 
 
 
@@ -455,3 +463,6 @@ Sistem ini masih dapat dikembangkan lebih lanjut agar lebih optimal. Misalnya de
 # PENUTUP
 
 Demikian tugas ini disusun sebagai bentuk pemahaman terhadap penerapan struktur data queue dalam kehidupan sehari-hari. Diharapkan sistem yang dibuat dapat memberikan gambaran sederhana mengenai pengelolaan antrian parkir. Penulis menyadari bahwa masih terdapat kekurangan, sehingga kritik dan saran sangat diharapkan untuk perbaikan ke depannya.
+
+
+# SLIFE PERESENTASI #
