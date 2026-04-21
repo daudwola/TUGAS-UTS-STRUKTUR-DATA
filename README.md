@@ -128,7 +128,7 @@ Jika memilih 4, maka sistem akan:
 
 Menampilkan seluruh daftar kendaraan yang sedang berada dalam antrian parkir
 
-**E Menampilkan laporan
+**E Menampilkan laporan **
 
 kendaraan masuk ,kendaraan keluar ,dan yang masi di parkirab 
 
